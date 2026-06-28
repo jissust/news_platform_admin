@@ -16,6 +16,11 @@
       "required": true,
       "unique": false
     },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
     "descent": {
       "type": "text"
     },
@@ -31,6 +36,10 @@
     "text": {
       "type": "richtext",
       "required": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
     },
     "author": {
       "type": "relation",
